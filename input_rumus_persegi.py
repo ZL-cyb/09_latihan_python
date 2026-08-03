@@ -6,4 +6,4 @@ L = int(input("masukan lebar persegi:"))
 a = P*L
 
 print(a)
-         
+print("==================================")
