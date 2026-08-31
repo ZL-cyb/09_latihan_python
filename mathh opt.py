@@ -21,7 +21,7 @@ def cek_ganjil_genap():
         if ulang.lower() != 'y':
             break
     
-# OPERATOR UTAMA
+# OPERATOR BILANGAN PRIMA
 def cek_bilangan_prima():
     print("\n" + "=" * 30)
     print("PROGRAM CEK BILANGAN PRIMA")
@@ -46,7 +46,43 @@ def cek_bilangan_prima():
         ulang = input("Apakah mau cek angka lagi? (y/n): ")
         if ulang.lower() != 'y':
             break
+
+#Operator bilangan rumus persegi
+def cek_bilangan_rumus_persegi():
+    print("\n" + "=" * 30)
+    print("PROGRAM CEK BILANGAN RUMUS PERSEGI")
+    print("=" * 30)
+    
+    while True:
+        panjang = int(input("\nMasukan panjang persegi : "))
+        lebar = int(input("\nMasukan lebar persegi : "))
         
+        if panjang * lebar == 1:
+            print(f"{panjang} x {lebar} adalah bilangan RUMUS PERSEGI")
+        else:
+            print(f"{panjang} x {lebar} BUKAN bilangan RUMUS PERSEGI")
+        ulang = input("Apakah mau cek panjang persegi lagi? (y/n): ")
+        if ulang.lower() != 'y':
+            break
+
+import math
+#Operasi konversi sudut
+def konversi_sudut():
+    print("\n" + "=" * 30)
+    print("PROGRAM OPERASI KONVERSI SUDUT")
+    print("=" * 30)
+    
+    while True:
+        derajat = float(input("\nMasukan derajat : "))
+        
+        radian = derajat * (math.pi / 180)
+        print(f"{derajat}° adalah {radian:.4f} RADIAN")
+        
+        Ulang = input("Apakah mau cek derajat lagi? (y/n): ")
+        if Ulang.lower() != 'y':
+            break 
+     
+
 # MENU UTAMA
 while True:
     print("\n" + "=" * 30)
@@ -64,6 +100,10 @@ while True:
     elif pilihan == '2':
         cek_bilangan_prima()
     elif pilihan =='3':
+        cek_bilangan_rumus_persegi()
+    elif pilihan =='4':
+        konversi_sudut()
+    elif pilihan =='5':
         break
     else:
         print("Pilihan tidak valid, silakan coba lagi.")
@@ -72,4 +112,3 @@ print("\n" + "=" * 30)
 print("SELESAI")
                     
                     
-    
