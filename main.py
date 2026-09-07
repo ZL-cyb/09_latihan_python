@@ -24,12 +24,11 @@ while True:
         konversi_sudut()
     elif pilihan == '4':
         cek_bilangan_rumus_persegi()
-    elif pilihan =='5':
-        break
+    elif pilihan == '5':
+        cek_bilangan_rumus_persegi()
     else:    
-        print("Pilihan tidak valid, silakan coba lagi.")
-        
-print("\n" + "=" * 30)
-print("SELESAI")
+        print("Pilihan tidak valid, silakan coba lagi.")   
+        break
+
 
 
