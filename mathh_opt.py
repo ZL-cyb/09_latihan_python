@@ -81,34 +81,7 @@ def konversi_sudut():
         Ulang = input("Apakah mau cek derajat lagi? (y/n): ")
         if Ulang.lower() != 'y':
             break 
-     
 
-# MENU UTAMA
-while True:
-    print("\n" + "=" * 30)
-    print("PILIH PROGRAM")
-    print("=" * 30)
-    print("1. Cek Ganjil / Genap")
-    print("2. Cek Bilangan Prima")
-    print("3. Keluar")
-    print("=" * 30)
-    
-    pilihan = input("Pilih menu (1/2/3) : ")
-   
-    if pilihan == '1':
-       cek_ganjil_genap()
-    elif pilihan == '2':
-        cek_bilangan_prima()
-    elif pilihan =='3':
-        cek_bilangan_rumus_persegi()
-    elif pilihan =='4':
-        konversi_sudut()
-    elif pilihan =='5':
-        break
-    else:
-        print("Pilihan tidak valid, silakan coba lagi.")
-        
-print("\n" + "=" * 30)
-print("SELESAI")
-                    
+
+
                     

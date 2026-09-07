@@ -62,29 +62,8 @@ def hapus_data():
       if ulang.lower() != 'y':
         break
     
-#Menu Utama
-while True:
-    print("\n" + "=" * 30)
-    print("PILIH PROGRAM")
-    print("=" * 30)
-    print("1. Cek Data")
-    print("2. Cari Data")
-    print("3. Hapus Data")
-    print("4. Keluar")
-    print("=" * 30)
-    
-    pilihan = input("Pilih menu (1/2/3/4) : ")
-   
-    if pilihan == '1':
-       urutkan_data()
-    elif pilihan == '2':
-        cari_data()
-    elif pilihan == '3':
-        hapus_data()
-    elif pilihan =='4':
-        break
-    else:
-        print("Pilihan tidak valid, silakan coba lagi.")
+
+
       
       
 
