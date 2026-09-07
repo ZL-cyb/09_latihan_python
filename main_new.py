@@ -17,18 +17,16 @@ while True:
     pilihan = input("Pilih menu (1/2/3/4/5) : ")
    
     if pilihan == '1':
-       urutkan_data()
-    elif pilihan == '2':
-        cari_data()
-    elif pilihan == '3':
-        konversi_sudut()
-    elif pilihan == '4':
-        cek_bilangan_rumus_persegi()
-    elif pilihan == '5':
-        cek_bilangan_rumus_persegi()
-    else:    
-        print("Pilihan tidak valid, silakan coba lagi.")   
-        break
-
-
-
+        if pilihan == '1':
+            urutkan_data()
+        elif pilihan == '2':
+            cari_data()
+        elif pilihan == '3':
+            konversi_sudut()
+        elif pilihan == '4':
+            cek_bilangan_rumus_persegi()
+        elif pilihan == '5':
+            break  # Digunakan untuk keluar dari perulangan while True
+else:
+    print("Pilihan tidak valid, silakan coba lagi.")    
+    
